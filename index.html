@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DS/2DS Family Homebrew FAQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #1e3c72, #2a5298);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    .faq {
+      margin: 20px 0;
+    }
+    .faq h3 {
+      cursor: pointer;
+      background: rgba(0,0,0,0.3);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .faq p {
+      display: none;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 5px;
+    }
+    .attention {
+      background: #ffcc00;
+      color: #000;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>3DS/2DS Family Homebrew FAQ</h1>
+  </header>
+  <div class="container">
+    <h2>General Information</h2>
+    <div class="attention">
+      ⚠️ THIS ISN'T A GUIDE. IT IS GENERAL ADVICE AND SOME INFO TO HELP YOU. DO NOT EDIT YOUR SD CARD ETC WITHOUT KNOWLEDGE OF WHAT YOU'RE DOING! THIS IS JUST A BASELINE!! Always refer to <a href="https://3ds.hacks.guide" target="_blank" style="color: #4da6ff;">3ds.hacks.guide</a> to install your homebrew, as any other website/youtube video will be outdated!
+    </div>
+
+    <h2>General Questions</h2>
+    <div class="faq">
+      <h3>What systems does this apply to?</h3>
+      <p>All 3DS family systems: 2DS, New 2DS XL, 3DS, 3DS XL, New 3DS, and New 3DS XL.</p>
+    </div>
+    <div class="faq">
+      <h3>What is hShop?</h3>
+      <p>hShop is a free and safe alternative to the 3DS eShop, where you can download games, updates, DLC, and themes directly on your system with FBI (although you can download and install directly from hshop aswell). It's the main replacement after Nintendo shut down the official eShop.</p>
+    </div>
+    <div class="faq">
+      <h3>Where can I get themes and customizations?</h3>
+      <p>You can use Anemone3DS to install custom themes, splash screens, and badges. Themes can be found on ThemePlaza and other community sites.</p>
+    </div>
+
+    <h2>Troubleshooting</h2>
+    <div class="faq">
+      <h3>My 3DS shows an "Arm11 Error" or crashes on boot. What do I do?</h3>
+      <p>This usually means your Luma3DS is outdated. Replace the boot.firm on your SD card and CTRNAND with the latest version of Luma3DS.</p>
+    </div>
+    <div class="faq">
+      <h3>My SD card corrupted. Can I fix it?</h3>
+      <p>Always keep backups of your Nintendo 3DS folder and essential files. If corruption happens, reformat the SD card to FAT32 and restore your backup.</p>
+    </div>
+    <div class="faq">
+      <h3>FBI gives a network error when trying to download games. What do I do?</h3>
+      <p>Make sure your Wi-Fi is configured correctly and check that it's not down. If the issue persists, your DNS may be blocking connections. Switch to a reliable DNS like 1.1.1.1 or Google DNS.</p>
+    </div>
+    <div class="faq">
+      <h3>My DS games won’t boot in TWiLight Menu++.</h3>
+      <p>Ensure you have the latest version of nds-bootstrap installed. Also, try deleting the TWiLight Menu++ settings folder to reset configurations.</p>
+    </div>
+    <div class="faq">
+      <h3>My GBA games have no save support.</h3>
+      <p>Make sure you are running open_agb_firm and not an outdated GBA emulator. open_agb_firm has native save support.</p>
+    </div>
+    <div class="faq">
+      <h3>My 3DS won’t detect my SD card.</h3>
+      <p>Check if the SD card is properly inserted and not locked (for microSD adapters). If issues persist, try another SD card reader or test with a different SD card.</p>
+    </div>
+    <div class="faq">
+      <h3>Games installed with FBI don’t appear on the Home Menu.</h3>
+      <p>This usually happens if you don’t exit FBI properly. Restart your console or rebuild the icon database in FBI.</p>
+    </div>
+
+    <h2>Games & Emulation</h2>
+    <div class="faq">
+      <h3>How do I run GBA/DS ROMs?</h3>
+      <p>For GBA games, use open_agb_firm via Luma3DS. For DS games, use TWiLight Menu++ along with nds-bootstrap, which lets you run DS games directly from the SD card without needing a flashcart. You can also use DS Bootstrap directly for launching DS titles.</p>
+    </div>
+    <div class="faq">
+      <h3>Can I run emulators for other consoles?</h3>
+      <p>Yes, emulators like RetroArch support NES, SNES, Genesis, Game Boy, and more. Performance varies depending on the console and emulator.</p>
+    </div>
+    <div class="faq">
+      <h3>Where can I find ROMs?</h3>
+      <p>You should only dump your own cartridges using GodMode9. Downloading copyrighted ROMs is illegal. Tools like GodMode9 can extract both 3DS and DS games to your SD card.</p>
+    </div>
+
+    <h2>Online & Connectivity</h2>
+    <div class="faq">
+      <h3>Can I still play online with homebrew?</h3>
+      <p>Nintendo's official online servers for the 3ds/2ds/ds family are unfortunately now permanently shut down, but you can use Pretendo Network, a fan-made replacement service that restores online play for many 3DS games.</p>
+    </div>
+    <div class="faq">
+      <h3>Can I still use the Friends List and Miiverse?</h3>
+      <p>Yes, Pretendo is working on restoring Friends List and Miiverse functionality. Some features are already available, with more planned soon.</p>
+    </div>
+    <div class="faq">
+      <h3>How do I update games if the eShop is gone?</h3>
+      <p>You can install game updates through hShop or manually using CIA files via FBI. Official update servers are no longer online and never will be.</p>
+    </div>
+
+    <h2>Backup & Safety</h2>
+    <div class="faq">
+      <h3>Do I need a NAND backup?</h3>
+      <p>You don't necessary need it, but we highly recommend it! A NAND backup ensures you can recover your console if something goes wrong. Always keep it in a safe place.</p>
+    </div>
+    <div class="faq">
+      <h3>Is homebrewing safe?</h3>
+      <p>Homebrewing your system has never been safer and more refined then to date. If you follow the guide 3ds.hacks.guide (link bottom and top of page) carefully, it is very safe. Always avoid random YouTube tutorials and unverified files.</p>
+    </div>
+    <div class="faq">
+      <h3>What files should I always back up?</h3>
+      <p>Your Nintendo 3DS folder, boot.firm, Luma3DS folder, GodMode9 folder, and NAND backups. Keeping these safe will let you recover from most problems.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Use <a href="https://3ds.hacks.guide" target="_blank" style="color: #4da6ff;">3ds.hacks.guide</a> to homebrew and troubleshoot your 3DS/2DS family of systems properly.</p>
+    <p>Made with ❤️ - Alex and the Brekko team</p>
+  </footer>
+
+  <script>
+    // Simple toggle for FAQ answers
+    const faqs = document.querySelectorAll('.faq h3');
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        const answer = faq.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
